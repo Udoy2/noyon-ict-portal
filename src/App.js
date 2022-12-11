@@ -1,16 +1,13 @@
 import './App.css';
 import Navbar from './components/nav'
-import Footer from './components/footer'
-import Head from './components/head'
+import Hero from './components/hero'
 function App() {
   return (
     <>
-    <div className="App h-full w-full">
+    <div className="App h-full w-full bg-[url('./bg.svg')] bg-no-repeat bg-cover">
       <Navbar/>
-      <Head/>
-      
+      <Hero/>
     </div>
-    
     </>
   );
 }
