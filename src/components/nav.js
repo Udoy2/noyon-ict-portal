@@ -12,21 +12,19 @@ export default function Navbar() {
             <img src={logo} alt="" className='w-[10rem] h-15' />
             </a>
               <ul className='hidden md:flex cursor-pointer m-5 font-mono '>
-                <li className='hover:text-emerald-300'>Home</li>
-                <li className='hover:text-emerald-300'>About</li>
-                <li className='hover:text-emerald-300'>Support</li>
-                <li className='hover:text-emerald-300'>Course</li>
+                <li className='hover:text-[#68b984]'>Home</li>
+                <li className='hover:text-[#68b984]'>About</li>
+                <li className='hover:text-[#68b984]'>Support</li>
+                <li className='hover:text-[#68b984]'>Course</li>
               </ul>
             </div>
             <div className='hidden md:flex pr-4'>
-              {/* <button className='border-none bg-transparent text-black mr-4 '>Sign in</button>
-              <button className='py-3 px-8'>sign up</button> */}
               <input
                     type="text"
-                    className="block w-full px-4 py-2 text-emerald-600 bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-4 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Search..."
                 />
-                <button className="px-4 text-white bg-emerald-600 rounded-full mx-2">
+                <button className="px-4 text-white bg-[#68b984] rounded-full mx-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-4 h-5"
@@ -54,18 +52,18 @@ export default function Navbar() {
            </div>
       </div>
        
-              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8'}>
-                <li className='border-b-2 w-full hover:text-emerald-300'>Home</li>
-                <li className='border-b-2 w-full hover:text-emerald-300'>About</li>
-                <li className='border-b-2 w-full hover:text-emerald-300'>Support</li>
-                <li className='border-b-2 w-full hover:text-emerald-300'>Course</li>
+              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8 ease-in-out '}>
+                <li className='border-b-2 w-full hover:text-[#68b984]'>Home</li>
+                <li className='border-b-2 w-full hover:text-[#68b984]'>About</li>
+                <li className='border-b-2 w-full hover:text-[#68b984]'>Support</li>
+                <li className='border-b-2 w-full hover:text-[#68b984]'>Course</li>
                 <div className='flex py-2'>
                 <input
                     type="text"
-                    className="block w-[50%] px-3 py-2 text-emerald-600 bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-[50%] px-3 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Search..."
                 />
-                <button className="px-4  text-white bg-emerald-600 rounded-full mx-2">
+                <button className="px-4  text-white bg-[#68b984] rounded-full mx-2">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-4 h-5"
