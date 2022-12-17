@@ -12,10 +12,10 @@ export default function Navbar() {
             <img src={logo} alt="" className='w-[10rem] h-15' />
             </a>
               <ul className='hidden md:flex cursor-pointer m-5 font-mono '>
-                <li className='hover:text-[#68b984]'>Home</li>
-                <li className='hover:text-[#68b984]'>About</li>
-                <li className='hover:text-[#68b984]'>Support</li>
-                <li className='hover:text-[#68b984]'>Course</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Home</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>About</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Support</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Course</li>
               </ul>
             </div>
             <div className='hidden md:flex pr-4'>
@@ -45,14 +45,14 @@ export default function Navbar() {
             <div className='md:hidden' onClick={handleCLick}>
               
 
-            {!nav ? <Bars3Icon className='h-6 w-6' />:<XMarkIcon className='h-6 w-6' />
+            {!nav ? <Bars3Icon className='h-6 w-6 ' />:<XMarkIcon className='h-6 w-6' />
 }
 
             
            </div>
       </div>
        
-              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8 ease-in-out '}>
+              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8 duration-150'}>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Home</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>About</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Support</li>
