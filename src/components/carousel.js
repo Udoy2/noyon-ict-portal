@@ -8,11 +8,11 @@ import { dataDigitalBestSeller } from './data';
 function Slide() {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
@@ -43,10 +43,10 @@ function Slide() {
   };
 
   return (
-      <div className="carousel">
+      <div className="carousel w-full">
       <Slider {...settings}>
         {dataDigitalBestSeller.map((item) => (
-          <div className="overflow-hidden rounded cursor-pointer text-black h-96 bg-[#f2f2f2] border-2 border-[#ffffff]" key={item.id}>
+          <div className="overflow-hidden rounded cursor-pointer text-black h-96 bg-[#68b984] border-2  border-[#ffffff]" key={item.id}>
             <div className="card-top">
               <img
                 src={item.linkImg}

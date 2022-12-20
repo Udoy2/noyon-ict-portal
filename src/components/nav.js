@@ -5,7 +5,7 @@ export default function Navbar() {
   const [nav,setNav] = useState(false)
   const handleCLick = ()=> setNav(!nav)
   return (
-    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg'>
+    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-sm'>
         <div className='px-5 flex justify-between items-center h-full max-w-[1240px] mx-auto '>
             <div className='flex items-center'>
             <a href="#">
@@ -45,14 +45,14 @@ export default function Navbar() {
             <div className='md:hidden' onClick={handleCLick}>
               
 
-            {!nav ? <Bars3Icon className='h-6 w-6 ' />:<XMarkIcon className='h-6 w-6' />
+            {!nav ? <Bars3Icon className='h-6 w-6 cursor-pointer' />:<XMarkIcon className='h-6 w-6 cursor-pointer' />
 }
 
             
            </div>
       </div>
        
-              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8 duration-150'}>
+              <ul className={!nav ? 'left-[100%] fixed ': 'absolute bg-white w-full duration-200 ease-in-out'}>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Home</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>About</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Support</li>

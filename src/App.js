@@ -1,15 +1,17 @@
 import './App.css';
 import Navbar from './components/nav'
 import Hero from './components/hero'
-import Slide from './components/carousel';
+import About from './components/About';
+import Footer from './components/footer'
 
 function App() {
   return (
     <>
-    <div className="App h-full w-full bg-no-repeat bg-cover">
+    <div className="App h-full w-full">
       <Navbar/>
       <Hero/>
-      <Slide/>
+      <About/>
+      <Footer/>
     </div>
     </>
   );
