@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './carousel.css';
 import { dataDigitalBestSeller } from './data';
 
+
 function Slide() {
 
   const settings = {
@@ -43,26 +44,28 @@ function Slide() {
   };
 
   return (
-      <div className="carousel w-full">
+      <div className="carousel ">
       <Slider {...settings}>
         {dataDigitalBestSeller.map((item) => (
-          <div className="overflow-hidden rounded cursor-pointer text-black h-96 bg-[#68b984] border-2  border-[#ffffff]" key={item.id}>
+          <div className="overflow-hidden rounded-md cursor-pointer text-black h-[25rem] bg-[#fdfdfd] border-2  border-[#ffffff] shadow-lg hover:scale-105 duration-300" key={item.id}>
             <div className="card-top">
               <img
                 src={item.linkImg}
                 alt={item.title}
+                className='w-full h-[200px] object-cover bg-[#68b984]'
               />
-              <h1>{item.title}</h1>
+              <h1 className='text-2xl font-bold m-4'>{item.title}</h1>
             </div>
             <div className="card-bottom">
               <h3>{item.price}</h3>
               <span className="category">{item.category}</span>
             </div>
+            
           </div>
         ))}
-      </Slider>
+      </Slider> 
     </div>
   );
-}
+} 
 
 export default Slide;

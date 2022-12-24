@@ -14,8 +14,8 @@ function Hero() {
   React.useEffect(() => {
     const options = {
     	strings: [
-        'Najmul',
-        'H Noyon',
+        'Nazmul',
+        'Najmul Noyon',
         'Najmul H Noyon'
       ],
       typeSpeed: 50,
@@ -35,13 +35,13 @@ function Hero() {
 
 
   return (
-    <div className='w-full h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center' style={{ backgroundImage: `url(${background})` }} >
+    <div className='w-full h-screen flex flex-col justify-between bg-cover bg-no-repeat bg-center animate-opacity' style={{ backgroundImage: `url(${background})` }} >
         <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
         <div className='flex flex-col justify-center sm:order-last 2xl:w-[50rem]  xl:w-[41rem] lg:w-[35rem] h-auto '>
-            <img src={HeroImg} alt=""  className='w-full'/>
+            <img src={HeroImg} alt=""  className='w-[90%] justify-center animate-blob ease-in-out'/>
         </div>
         <div className='flex flex-col justify-center md:items-center w-full px-2 py-8 '>
-        <p className='py-3 text-4xl md:text-5xl text-stone-800'><span className='font-bold text-6xl '>ICT</span> কি? কেন? কিভাবে?</p>
+        <p className='py-3 text-4xl md:text-5xl text-stone-600'><span className='font-bold text-6xl '>ICT</span> কি? কেন? কিভাবে?</p>
         <h1 className='text-4xl font-sen py-8 text-stone-600'>Learn ICT with <span className='font-bold cursor-pointer text-[#68b984] hover:text-[#7b7c7c] ' ref={el}>Najmul H. Noyon</span></h1>
                 
         <Custombutton type='submit' px5>

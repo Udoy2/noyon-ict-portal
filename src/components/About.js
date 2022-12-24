@@ -1,12 +1,14 @@
 import React from 'react'
 import Slide from './carousel'
+import AboutPng from './about.png'
 const About = () => {
   return (
-    <div className='bg-[#fff] w-full py-10'>
-        <h1 className='text-center text-6xl font-bold py-4'>Hello world</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aspernatur eum tempore fugiat aperiam voluptatum, dignissimos quibusdam accusantium accusamus numquam hic eveniet eos doloribus eligendi cupiditate quia recusandae, optio ipsum!</p>
+    <div className='bg-[#fff] w-full py-8'>
+        <h1 className='text-center text-5xl font-bold py-4'>জনপ্রিয় কোর্সসমূহ</h1>
         <Slide/>
-        <h2>its time to play the game </h2>
+        <div style={ { backgroundImage: `url(${AboutPng})` } } className='h-[71px] sm:h-[100px] md:h-[118px] mt-[-10px] xl:h-[300px] lg:h-[260px] md:w-auto bg-cover md:mt-[-100px]'>
+            
+            </div>
     </div>
   )
 }

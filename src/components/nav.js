@@ -21,7 +21,7 @@ export default function Navbar() {
             <div className='hidden md:flex pr-4'>
               <input
                     type="text"
-                    className="block w-full px-4 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-2 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-sm rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Search..."
                 />
                 <button className="px-4 text-white bg-[#68b984] rounded-full mx-2">

@@ -20,6 +20,36 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    extend:{
+      animation:{
+        blob:'blob 4s infinite ease-in-out',
+        opacity:'opacity ease-in-out'
+      },
+      keyframes:{
+        blob:{
+          "0%":{
+            transform :' scale(1)',
+          },
+          "33%":{
+            transform:' scale(1.1)',
+          },
+          "66%":{
+            transform:' scale(0.9)',
+          },
+          "100%":{
+            transform:' scale(1)',
+          },
+          opacity:{
+            '0%':{
+              transform:'opacity(0)'
+            },
+            '100%':{
+              transform:'opacity(1)'
+            }
+          }
+        }
+      }
+    },
   },
   plugins: [],
 }
