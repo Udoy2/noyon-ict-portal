@@ -1,0 +1,43 @@
+
+.carousel {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+  }
+
+  .slick-slide > div {
+    margin: 0 20px;  
+    padding: 10px 0;
+  }
+ 
+  .card-bottom {
+    margin: 10px 20px;
+    text-align: left;
+  }
+  
+  .category {
+    position: relative;
+  }
+  .category::before {
+    content: '';
+    background: #68b984;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+  .slick-prev:before {
+    color: rgb(80, 80, 80);
+    font-size: 50px;
+    
+  }
+  .slick-prev{
+    left:-55px;
+  }
+  .slick-next:before {
+    color: rgb(80, 80, 80);
+    font-size: 50px;
+   
+  }

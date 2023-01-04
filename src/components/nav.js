@@ -5,23 +5,23 @@ export default function Navbar() {
   const [nav,setNav] = useState(false)
   const handleCLick = ()=> setNav(!nav)
   return (
-    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-lg'>
+    <div className='w-screen h-[80px] z-10 bg-white fixed drop-shadow-sm'>
         <div className='px-5 flex justify-between items-center h-full max-w-[1240px] mx-auto '>
             <div className='flex items-center'>
             <a href="#">
             <img src={logo} alt="" className='w-[10rem] h-15' />
             </a>
               <ul className='hidden md:flex cursor-pointer m-5 font-mono '>
-                <li className='hover:text-[#68b984]'>Home</li>
-                <li className='hover:text-[#68b984]'>About</li>
-                <li className='hover:text-[#68b984]'>Support</li>
-                <li className='hover:text-[#68b984]'>Course</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Home</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>About</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Support</li>
+                <li className='hover:text-[#68b984] hover:scale-125 transition  ease-in-out '>Course</li>
               </ul>
             </div>
             <div className='hidden md:flex pr-4'>
               <input
                     type="text"
-                    className="block w-full px-4 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-lg rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
+                    className="block w-full px-2 py-2 text-[#68b984] bg-[#F4F7FD] border drop-shadow-sm rounded-full focus:outline-none focus:ring focus:ring-opacity-40"
                     placeholder="Search..."
                 />
                 <button className="px-4 text-white bg-[#68b984] rounded-full mx-2">
@@ -45,14 +45,14 @@ export default function Navbar() {
             <div className='md:hidden' onClick={handleCLick}>
               
 
-            {!nav ? <Bars3Icon className='h-6 w-6' />:<XMarkIcon className='h-6 w-6' />
+            {!nav ? <Bars3Icon className='h-6 w-6 cursor-pointer' />:<XMarkIcon className='h-6 w-6 cursor-pointer' />
 }
 
             
            </div>
       </div>
        
-              <ul className={!nav ? 'hidden': 'absolute bg-white w-full px-8 ease-in-out '}>
+              <ul className={!nav ? 'left-[100%] fixed ': 'absolute bg-white w-full duration-200 ease-in-out'}>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Home</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>About</li>
                 <li className='border-b-2 w-full hover:text-[#68b984]'>Support</li>
